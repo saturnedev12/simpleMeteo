@@ -4,19 +4,19 @@ class DataModel {
   final Map main;
   final int visibility;
   final Map wind;
-  final Map rain;
+  //final Map rain;
   final Map clouds;
   final Map sys;
   final String name;
   DataModel(this.coord, this.weather, this.main, this.visibility, this.wind,
-      this.rain, this.clouds, this.sys, this.name);
+      this.clouds, this.sys, this.name);
   DataModel.fromJson(Map<String, dynamic> json)
       : coord = json['coord'],
         weather = json['weather'],
         main = json['main'],
         visibility = json['visibility'],
         wind = json['wind'],
-        rain = json['rain'],
+        //rain = json['rain'],
         clouds = json['clouds'],
         sys = json['sys'],
         name = json['name'];
@@ -26,7 +26,7 @@ class DataModel {
         'main': main,
         'visibility': visibility,
         'wind': wind,
-        'rain': rain,
+        //'rain': rain,
         'clouds': clouds,
         'sys': sys,
         'name': name,

@@ -6,5 +6,6 @@ import 'package:meteo/models/data_model.dart';
 //}
 
 class DataProvider {
-  get() async => DataModel.fromJson(await DataFetcher().fetchData());
+  Future<DataModel> get() async =>
+      DataModel.fromJson(await DataFetcher().fetchData());
 }
